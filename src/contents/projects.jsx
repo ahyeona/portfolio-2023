@@ -203,6 +203,15 @@ const Projects = () => {
 
             <Modal show={isShowingModal2} onCloseButtonClick={toggleModal2}>
                 nobroker 상세
+
+                부동산 매물을 거래할 수 있는 매매 사이트
+                
+                로그인, 회원가입, 매물 목록, 매물 등록, 매물 상세, 매물 투표, 마이페이지 기능
+                
+                판매자가 매물을 등록하면 사업자 회원들이 해당 매물에 대한 진위 여부를 투표하고, 투표 결과에 따라 매물 목록에 등록됨
+                구매자는 매물 목록 페이지의 매물을 상세 페이지에서 확인할 수 있고, 거래 신청을 할 수 있음
+                판매자와 구매자는 마이페이지에서 매물을 거래할 수 있음
+
             </Modal>
 
             <Modal show={isShowingModal3} onCloseButtonClick={toggleModal3}>
