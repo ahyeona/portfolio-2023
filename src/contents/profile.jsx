@@ -3,6 +3,7 @@ import { IoLogoGithub } from 'react-icons/io'
 import { TfiEmail } from 'react-icons/tfi'
 import { FaBlogger } from 'react-icons/fa6'
 import { useState, useRef, useEffect } from 'react'
+import { SiVelog } from 'react-icons/si'
 
 const Profile = () => {
     const [isVisible, setIsVisible] = useState(false)
@@ -40,12 +41,12 @@ const Profile = () => {
             }`}
         >
             {/* <div className="w-[280px] md:w-[28%] ">
-                <img
-                    src=""
+                 <img
+                    src={process.env.PUBLIC_URL+ '/favicon.ico'}
                     aria-hidden
                     alt="profile image"
                     className="w-[100vw] m-auto rounded-full border-2 border-slate-500"
-                />
+                /> 
             </div> */}
             <div className="w-[100%] box-border md:w-[70%] md:p-[10px] ">
                 <Hero>
@@ -68,7 +69,7 @@ const Profile = () => {
                         ahyeona
                     </a>
                     <a href="https://velog.io/@ahyeona" className="flex items-center gap-[5px] text-slate-600" target='blank'>
-                        <FaBlogger />
+                        <SiVelog />
                         blog
                     </a>
                 </p>
