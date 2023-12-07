@@ -59,6 +59,7 @@ const Projects = () => {
                             <SiSolidity />
                             <FaHardHat />                            
                             <DiReact />
+                            <SiReactquery />
                             <FaAws />
                         </div>
 
@@ -111,11 +112,8 @@ const Projects = () => {
                             <DiNodejs />
                             <DiMysql />
                             <DiGithubBadge />
-                            <SiReactquery />
-                            {/* <SiTypescript /> */}
-                            {/* <DiTrello /> */}
                             <DiReact />
-                            {/* <SiNextdotjs /> */}
+                            <SiReactquery />
                         </div>
 
                         <h3 className="py-[16px] text-[16px] font-bold">주요 업무</h3>

@@ -1,6 +1,6 @@
 import { Wrapper, Heading } from '../components/common'
 import { DiJavascript, DiNodejs, DiGithubBadge } from 'react-icons/di'
-import { SiNextdotjs, SiTypescript, SiJavascript, SiExpress, SiReact } from 'react-icons/si'
+import { SiNextdotjs, SiTypescript, SiJavascript, SiExpress, SiReact, SiSolidity } from 'react-icons/si'
 
 const Skills = () => {
     return (
@@ -19,7 +19,7 @@ const Skills = () => {
                             </span>
                             <ul className="list-disc list-outside leading-6 px-[20px] md:leading-8 text-[12px] md:text-[16px] ">
                                 <li>
-                                    
+                                    내가 뭘 할 줄 알지?
                                 </li>
                                 {/* <li>Console.log 잘찍음</li>
                                 <li>연산자 사용할줄암!</li>
@@ -30,11 +30,11 @@ const Skills = () => {
 
                         <li className="flex flex-col gap-[8px] md:gap-[32px] md:flex-row items-baseline">
                             <span className="text-[16px] text-slate-600 md:text-[24px] basis-[20%] flex items-center gap-[8px]">
-                                <SiTypescript />
-                                <span className="md:w-[120px]">Typescript</span>
+                                <SiSolidity />
+                                <span className="md:w-[120px]">Solidity</span>
                             </span>
                             <ul className="list-disc list-outside leading-6 px-[20px] md:leading-8 text-[12px] md:text-[16px] ">
-                                <li></li>
+                                <li>간단한 컨트랙트 작성 가능...</li>
                                 {/* <li>Console.log 잘찍음</li>
                                 <li>연산자 사용할줄암!</li>
                                 <li>조건문을 배움</li>
