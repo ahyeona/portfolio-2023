@@ -216,6 +216,12 @@ const Projects = () => {
 
             <Modal show={isShowingModal3} onCloseButtonClick={toggleModal3}>
                 internode 상세
+
+                티켓을 예매할 수 있는 사이트
+                공연 목록 페이지에서 예매 가능한 공연 목록을 확인할 수 있음
+                자유게시판, 리뷰 목록에서 공연에 대한 평가를 확인할 수 있음
+                공얀 예매 페이지에서는 좌석을 선택해서 예매할 수 있음
+                socket.io를 사용하여 관리자와의 채팅 기능을 구현함 
             </Modal>
         </Wrapper>
     )
