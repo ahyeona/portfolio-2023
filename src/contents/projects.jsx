@@ -23,7 +23,7 @@ const Projects = () => {
                             src={process.env.PUBLIC_URL + '/bounswap.png'}
                             className="w-full"
                             alt="bounswap img"
-                            />
+                        />
                         <ul className="flex text-[12px] text-slate-600 py-[8px] gap-[8px] flex-row md:flex-col items-center md:items-start">
                             <li className="text-[16px]">팀 프로젝트 (5명)</li>
                             <li className="text-stone-500">2023.10.23 ~ 2023. 12. 05</li>
@@ -32,7 +32,7 @@ const Projects = () => {
                                 <button
                                     onClick={toggleModal}
                                     className="px-[16px] py-[8px] bg-gray-800 rounded-[8px] text-white hover:bg-gray-950"
-                                    >
+                                >
                                     상세보기
                                 </button>
                             </li>
@@ -56,7 +56,7 @@ const Projects = () => {
                             <DiGithubBadge />
                             <SiTypescript />
                             <SiSolidity />
-                            <FaHardHat />                            
+                            <FaHardHat />
                             <DiReact />
                             <SiReactquery />
                             <FaAws />
@@ -78,7 +78,7 @@ const Projects = () => {
                             src={process.env.PUBLIC_URL + '/nobroker.png'}
                             className="w-full"
                             alt="nobroker img"
-                            />
+                        />
                         <ul className="flex text-[12px] text-slate-600 py-[8px] gap-[8px] flex-row md:flex-col items-center md:items-start">
                             <li className="text-[16px]">팀 프로젝트 (4명)</li>
                             <li className="text-stone-500">2023. 07. 28 ~ 2023. 08. 28</li>
@@ -87,7 +87,7 @@ const Projects = () => {
                                 <button
                                     onClick={toggleModal2}
                                     className="px-[16px] py-[8px] bg-gray-800 rounded-[8px] text-white hover:bg-gray-950"
-                                    >
+                                >
                                     상세보기
                                 </button>
                             </li>
@@ -133,7 +133,7 @@ const Projects = () => {
                             src={process.env.PUBLIC_URL + '/internode.png'}
                             className="w-full"
                             alt="bounswap img"
-                            />
+                        />
                         <ul className="flex text-[12px] text-slate-600 py-[8px] gap-[8px] flex-row md:flex-col items-center md:items-start">
                             <li className="text-[16px]">팀 프로젝트 (4명)</li>
                             <li className="text-stone-500">2023. 06. 02 ~ 2023. 06. 26</li>
@@ -142,7 +142,7 @@ const Projects = () => {
                                 <button
                                     onClick={toggleModal3}
                                     className="px-[16px] py-[8px] bg-gray-800 rounded-[8px] text-white hover:bg-gray-950"
-                                    >
+                                >
                                     상세보기
                                 </button>
                             </li>
@@ -205,7 +205,7 @@ const Projects = () => {
                             governance 컨트랙트는 거버넌스 기능과 관련된 의제 제출, 투표 기능을 담당하는 컨트랙트이다.
                         </li>
                         <li>
-                            front : react query를 활용하여 컨트랙트에게 응답받은 데이터를 프론트에 
+                            front : react query를 활용하여 컨트랙트에게 응답받은 데이터를 프론트에
                         </li>
                         <li>
                             deploy : AWS S3 정적 배포
@@ -216,57 +216,55 @@ const Projects = () => {
                     <h4 className='font-bold mt-6'>구현 페이지</h4>
                     <ul>
                         <li>
-                            <img src={process.env.PUBLIC_URL + '/bounswap.png' } className='h-[300px] mx-auto' />
+                            <img src={process.env.PUBLIC_URL + '/bounswap.png'} className='h-[300px] mx-auto' />
                             <span>swap 페이지</span>
                         </li>
                         <li>
-                            <img src={process.env.PUBLIC_URL + '/bounswap_tokens.png' } className='h-[300px] mx-auto' />
+                            <img src={process.env.PUBLIC_URL + '/bounswap_tokens.png'} className='h-[300px] mx-auto' />
                             <span>token dashboard 페이지</span>
                         </li>
                         <li>
-                            <img src={process.env.PUBLIC_URL + '/bounswap_tokenDetail.png' } className='h-[300px] mx-auto' />
+                            <img src={process.env.PUBLIC_URL + '/bounswap_tokenDetail.png'} className='h-[300px] mx-auto' />
                             <span>token detail 페이지</span>
                         </li>
                         <li>
-                            <img src={process.env.PUBLIC_URL + '/bounswap_pools.png' } className='h-[300px] mx-auto' />
+                            <img src={process.env.PUBLIC_URL + '/bounswap_pools.png'} className='h-[300px] mx-auto' />
                             <span>pool dashboard 페이지</span>
                         </li>
                         <li>
-                            <img src={process.env.PUBLIC_URL + '/bounswap_poolDetail.png' } className='h-[300px] mx-auto' />
+                            <img src={process.env.PUBLIC_URL + '/bounswap_poolDetail.png'} className='h-[300px] mx-auto' />
                             <span>pool detail 페이지</span>
                         </li>
                         <li>
-                            <img src={process.env.PUBLIC_URL + '/bounswap_stake.png' } className='h-[300px] mx-auto' />
+                            <img src={process.env.PUBLIC_URL + '/bounswap_stake.png'} className='h-[300px] mx-auto' />
                             <span>stake dashboard 페이지</span>
                         </li>
                         <li>
-                            <img src={process.env.PUBLIC_URL + '/bounswap_governance.png' } className='h-[300px] mx-auto' />
+                            <img src={process.env.PUBLIC_URL + '/bounswap_governance.png'} className='h-[300px] mx-auto' />
                             <span>governance 페이지</span>
                         </li>
                         <li>
-                            <img src={process.env.PUBLIC_URL + '/bounswap_sidebar.png' } className='h-[300px] mx-auto' />
+                            <img src={process.env.PUBLIC_URL + '/bounswap_sidebar.png'} className='h-[300px] mx-auto' />
                             <span>sidebar</span>
                         </li>
                         <li>
-                            <img src={process.env.PUBLIC_URL + '/bounswap_mobile.gif' } className='h-[300px] mx-auto' />
+                            <img src={process.env.PUBLIC_URL + '/bounswap_mobile.gif'} className='h-[300px] mx-auto' />
                             <span>모바일 구현</span>
                         </li>
                     </ul>
-                    
+
                 </div>
 
             </Modal>
 
             <Modal show={isShowingModal2} onCloseButtonClick={toggleModal2}>
-                로그인, 회원가입, 매물 목록, 매물 등록, 매물 상세, 매물 투표, 마이페이지 기능
-                
-                판매자가 매물을 등록하면 사업자 회원들이 해당 매물에 대한 진위 여부를 투표하고, 투표 결과에 따라 매물 목록에 등록됨
-                구매자는 매물 목록 페이지의 매물을 상세 페이지에서 확인할 수 있고, 거래 신청을 할 수 있음
-                판매자와 구매자는 마이페이지에서 매물을 거래할 수 있음
 
                 <div>
                     <h3 className='font-bold'>부동산 매물을 거래할 수 있는 매매 사이트</h3>
                     <h4 className='font-bold mt-6'>기능</h4>
+                    판매자가 매물을 등록하면 사업자 회원들이 해당 매물에 대한 진위 여부를 투표하고, 투표 결과에 따라 매물 목록에 등록됨
+                    구매자는 매물 목록 페이지의 매물을 상세 페이지에서 확인할 수 있고, 거래 신청을 할 수 있음
+                    판매자와 구매자는 마이페이지에서 매물을 거래할 수 있음
                     <ul>
                         <li>로그인</li>
                         <li>회원가입 : 사업자 회원, 일반 회원을 선택하여 회원가입 가능</li>
@@ -282,17 +280,22 @@ const Projects = () => {
                         <li>투표 : 등록된 매물의 진위 여부를 판별하기 위한 기능. 사업자 회원들만 투표 가능함</li>
                         <li>마이페이지: 등록, 구매한 매물 목록을 확인할 수 있고, 매물 거래가 가능함</li>
                     </ul>
-                    
+
 
                     <h4 className='font-bold mt-6'>작업 내용</h4>
                     <ul>
                         <li>
-                            매물 상세
-                            - front : 특정 매물의 뭐냐 ㅇㅇ
-                            - back : mysql에서 매물의 상세 정보를 
+                            <ul>
+                                매물 상세
+                                <li>front : 특정 매물의 상세 정보를 띄워줌. 여러 이미지를 보여주기 위해 이미지 슬라이드 기능을 구현함.</li>
+                                <li>back : mysql에서 매물의 상세 정보를 프론트에 반환하는 api를 작성함</li>
+                            </ul>
                         </li>
                         <li>
-                            매물 투표 : 매일 자정에 
+                            <ul>
+                                매물 투표
+                                <li>front, back : 투표 기능 작성</li>
+                            </ul>
                         </li>
                         <li>
                             deploy : AWS EC2 배포
@@ -303,23 +306,23 @@ const Projects = () => {
                     <h4 className='font-bold mt-6'>구현 페이지</h4>
                     <ul>
                         <li>
-                            <img src={process.env.PUBLIC_URL + '/bounswap.png' } className='h-[300px] mx-auto' />
-                            <span>swap 페이지</span>
+                            <img src={process.env.PUBLIC_URL + '/nobroker_main.png'} className='h-[300px] mx-auto' />
+                            <span>메인 페이지</span>
                         </li>
                         <li>
-                            <img src={process.env.PUBLIC_URL + '/bounswap_tokens.png' } className='h-[300px] mx-auto' />
-                            <span>token dashboard 페이지</span>
+                            <img src={process.env.PUBLIC_URL + '/nobroker_list.png'} className='h-[300px] mx-auto' />
+                            <span>매물 목록 페이지</span>
                         </li>
                         <li>
-                            <img src={process.env.PUBLIC_URL + '/bounswap_tokenDetail.png' } className='h-[300px] mx-auto' />
-                            <span>token detail 페이지</span>
+                            <img src={process.env.PUBLIC_URL + '/nobroker_detail.png'} className='h-[300px] mx-auto' />
+                            <span>매물 상세 페이지</span>
                         </li>
                         <li>
-                            <img src={process.env.PUBLIC_URL + '/bounswap_pools.png' } className='h-[300px] mx-auto' />
-                            <span>pool dashboard 페이지</span>
+                            <img src={process.env.PUBLIC_URL + '/nobroker_voteList.png'} className='h-[300px] mx-auto' />
+                            <span>매물 투표 목록 페이지</span>
                         </li>
                     </ul>
-                    
+
                 </div>
 
 
@@ -329,14 +332,14 @@ const Projects = () => {
 
             <Modal show={isShowingModal3} onCloseButtonClick={toggleModal3}>
                 <h4>티켓을 예매할 수 있는 사이트</h4>
-                <img 
+                <img
                     src={process.env.PUBLIC_URL + '/internode.png'}
                 />
                 공연 목록 페이지에서 예매 가능한 공연 목록을 확인할 수 있음
                 자유게시판, 리뷰 목록에서 공연에 대한 평가를 확인할 수 있음
                 공연 예매 페이지에서는 좌석을 선택해서 예매할 수 있음
                 관리자 페이지에서 유저 관리 가능
-                socket.io를 사용하여 관리자와의 채팅 기능을 구현함 
+                socket.io를 사용하여 관리자와의 채팅 기능을 구현함
             </Modal>
         </Wrapper>
     )
