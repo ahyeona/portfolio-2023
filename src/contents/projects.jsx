@@ -1,12 +1,15 @@
 import { Wrapper, Heading } from '../components/common'
 import { FaAws, FaExternalLinkAlt, FaHardHat } from 'react-icons/fa'
 import { DiJavascript, DiNodejs, DiGithubBadge, DiMysql, DiAws } from 'react-icons/di'
-import { SiExpress, SiReactquery, SiSolidity, SiTypescript } from 'react-icons/si'
+import { SiExpress, SiReactquery, SiSolidity, SiTypescript, SiVelog } from 'react-icons/si'
 import { DiReact } from 'react-icons/di'
 import useModal from '../hooks/useModal'
 import Modal from '../components/modal'
 
 const Projects = () => {
+    // console.log("this==window", this==window);
+    // console.log("this", this);
+
     const [isShowingModal, toggleModal] = useModal()
     const [isShowingModal2, toggleModal2] = useModal()
     const [isShowingModal3, toggleModal3] = useModal()
@@ -331,15 +334,45 @@ const Projects = () => {
             </Modal>
 
             <Modal show={isShowingModal3} onCloseButtonClick={toggleModal3}>
-                <h4>티켓을 예매할 수 있는 사이트</h4>
-                <img
-                    src={process.env.PUBLIC_URL + '/internode.png'}
-                />
-                공연 목록 페이지에서 예매 가능한 공연 목록을 확인할 수 있음
-                자유게시판, 리뷰 목록에서 공연에 대한 평가를 확인할 수 있음
-                공연 예매 페이지에서는 좌석을 선택해서 예매할 수 있음
-                관리자 페이지에서 유저 관리 가능
-                socket.io를 사용하여 관리자와의 채팅 기능을 구현함
+                <div>
+                    <h3 className='font-bold'>티켓을 예매할 수 있는 사이트</h3>
+                    <h4 className='font-bold mt-6'>기능</h4>
+                    공연 목록 페이지에서 예매 가능한 공연 목록을 확인할 수 있음
+                    자유게시판, 리뷰 목록에서 공연에 대한 평가를 확인할 수 있음
+                    공연 예매 페이지에서는 좌석을 선택해서 예매할 수 있음
+                    관리자 페이지에서 유저 관리 가능
+                    socket.io를 사용하여 관리자와의 채팅 기능을 구현함
+                    <ul>
+                        <li>공연 목록</li>
+                        <li>예매</li>
+                        <li>리뷰</li>
+                        <li>게시판</li>
+                        <li>관리자</li>
+                    </ul>
+
+
+                    <h4 className='font-bold mt-6'>작업 내용</h4>
+                    <ul>
+                        <li>
+                            공연 예매 기능 구현 : socket.io 사용
+                        </li>
+                    </ul>
+
+
+                    <h4 className='font-bold mt-6'>구현 페이지</h4>
+                    <ul>
+                        <li>
+                            <img src={process.env.PUBLIC_URL + '/internode.png'} className='h-[300px] mx-auto' />
+                            <img src={process.env.PUBLIC_URL + '/internode_list2.png'} className='h-[300px] mx-auto' />
+                            <span>메인 페이지</span>
+                        </li>
+                    </ul>
+
+                    <SiVelog />
+                    <a href="https://velog.io/@ahyeona/%EB%85%B8%EB%93%9C-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8" target="_blank" rel="noopener noreferrer">velog</a>
+                    
+                </div>
+
             </Modal>
         </Wrapper>
     )
