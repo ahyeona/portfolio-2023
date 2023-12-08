@@ -337,25 +337,21 @@ const Projects = () => {
                 <div>
                     <h3 className='font-bold'>티켓을 예매할 수 있는 사이트</h3>
                     <h4 className='font-bold mt-6'>기능</h4>
-                    공연 목록 페이지에서 예매 가능한 공연 목록을 확인할 수 있음
-                    자유게시판, 리뷰 목록에서 공연에 대한 평가를 확인할 수 있음
-                    공연 예매 페이지에서는 좌석을 선택해서 예매할 수 있음
-                    관리자 페이지에서 유저 관리 가능
-                    socket.io를 사용하여 관리자와의 채팅 기능을 구현함
                     <ul>
-                        <li>공연 목록</li>
-                        <li>예매</li>
-                        <li>리뷰</li>
-                        <li>게시판</li>
-                        <li>관리자</li>
+                        <li>공연 목록 : 예매 가능한 공연 목록 확인 가능</li>
+                        <li>예매 : socket.io를 사용하여 공연 예매 구현</li>
+                        <li>리뷰 : 공연에 대한 리뷰 작성 가능</li>
+                        <li>게시판 : 자유로운 게시글 작성</li>
+                        <li>관리자 : 유저 관리 및 공연 등록. socket.io를 사용하여 채팅 기능 구현</li>
+                        <li>마이페이지 : 개인 정보 수정 및 예매 내역 확인 가능</li>
                     </ul>
-
 
                     <h4 className='font-bold mt-6'>작업 내용</h4>
                     <ul>
                         <li>
                             공연 예매 기능 구현 : socket.io 사용
                         </li>
+                        <li>마이 페이지</li>
                     </ul>
 
 
@@ -367,9 +363,8 @@ const Projects = () => {
                             <span>메인 페이지</span>
                         </li>
                     </ul>
-
-                    <SiVelog />
-                    <a href="https://velog.io/@ahyeona/%EB%85%B8%EB%93%9C-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8" target="_blank" rel="noopener noreferrer">velog</a>
+                    
+                    <a href="https://velog.io/@ahyeona/%EB%85%B8%EB%93%9C-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8" target="_blank" rel="noopener noreferrer"><SiVelog /></a>
                     
                 </div>
 
