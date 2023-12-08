@@ -6,7 +6,7 @@ const Modal = ({ show, onCloseButtonClick, children }) => {
 
     return ReactDOM.createPortal(
         <div
-            onClick={onCloseButtonClick}
+            // onClick={onCloseButtonClick}
             className="fixed top-0 left-0 flex items-center justify-center w-full h-full bg-gray-500 bg-opacity-50"
         >
             <div className="p-8 bg-white rounded-md w-[50%] h-[80%]">
@@ -15,7 +15,7 @@ const Modal = ({ show, onCloseButtonClick, children }) => {
                         X
                     </button>
                 </h2>
-                <div className="body h-full overflow-y-auto">{children}</div>
+                <div className="body w-[94%] h-full overflow-y-auto p-4 mx-auto">{children}</div>
                 {/* <div className="footer">
                     <button onClick={onCloseButtonClick}>Close Modal</button>
                 </div> */}

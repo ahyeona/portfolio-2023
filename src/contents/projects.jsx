@@ -1,7 +1,7 @@
 import { Wrapper, Heading } from '../components/common'
 import { FaAws, FaExternalLinkAlt, FaHardHat } from 'react-icons/fa'
 import { DiJavascript, DiNodejs, DiGithubBadge, DiMysql, DiAws } from 'react-icons/di'
-import { SiReactquery, SiSolidity, SiTypescript } from 'react-icons/si'
+import { SiExpress, SiReactquery, SiSolidity, SiTypescript } from 'react-icons/si'
 import { DiReact } from 'react-icons/di'
 import useModal from '../hooks/useModal'
 import Modal from '../components/modal'
@@ -27,7 +27,7 @@ const Projects = () => {
                         <ul className="flex text-[12px] text-slate-600 py-[8px] gap-[8px] flex-row md:flex-col items-center md:items-start">
                             <li className="text-[16px]">팀 프로젝트 (5명)</li>
                             <li className="text-stone-500">2023.10.23 ~ 2023. 12. 05</li>
-                            <li>contract</li>
+                            <li>contract, deploy</li>
                             <li>
                                 <button
                                     onClick={toggleModal}
@@ -47,13 +47,12 @@ const Projects = () => {
                         </h2>
 
                         <p className="leading-5 text-slate-950 text-[12px] md:text-[16px] md:leading-7">
-                        Uniswap의 분산형 자동화 마켓 메이커(AMM)를 기반으로 사용자에게 토큰 교환, 유동성 공급 기능과 다양한 수익창출의 기회를 제공하는 탈중앙화 거래소(DEX)
+                            Uniswap의 분산형 자동화 마켓 메이커(AMM)를 기반으로 사용자에게 토큰 교환, 유동성 공급 기능과 다양한 수익창출의 기회를 제공하는 탈중앙화 거래소(DEX)
                         </p>
 
                         <h3 className="py-[16px] text-[16px] font-bold">사용 스택</h3>
                         <div className="flex flex-row text-[32px] gap-[8px] py-[8px] px-[32px]">
                             <DiJavascript />
-                            <DiNodejs />
                             <DiGithubBadge />
                             <SiTypescript />
                             <SiSolidity />
@@ -83,7 +82,7 @@ const Projects = () => {
                         <ul className="flex text-[12px] text-slate-600 py-[8px] gap-[8px] flex-row md:flex-col items-center md:items-start">
                             <li className="text-[16px]">팀 프로젝트 (4명)</li>
                             <li className="text-stone-500">2023. 07. 28 ~ 2023. 08. 28</li>
-                            <li>backend, frontend</li>
+                            <li>backend, frontend, deploy</li>
                             <li>
                                 <button
                                     onClick={toggleModal2}
@@ -103,13 +102,14 @@ const Projects = () => {
                         </h2>
 
                         <p className="leading-5 text-slate-950 text-[12px] md:text-[16px] md:leading-7">
-                            nobroker 상세
+                            중개사 없이 매물을 거래할 수 있는 사이트
                         </p>
 
                         <h3 className="py-[16px] text-[16px] font-bold">사용 스택</h3>
                         <div className="flex flex-row text-[32px] gap-[8px] py-[8px] px-[32px]">
                             <DiJavascript />
                             <DiNodejs />
+                            <SiExpress />
                             <DiMysql />
                             <DiGithubBadge />
                             <DiReact />
@@ -140,7 +140,7 @@ const Projects = () => {
                             <li>backend, frontend</li>
                             <li>
                                 <button
-                                    onClick={toggleModal2}
+                                    onClick={toggleModal3}
                                     className="px-[16px] py-[8px] bg-gray-800 rounded-[8px] text-white hover:bg-gray-950"
                                     >
                                     상세보기
@@ -157,13 +157,14 @@ const Projects = () => {
                         </h2>
 
                         <p className="leading-5 text-slate-950 text-[12px] md:text-[16px] md:leading-7">
-                            internode 상세
+                            티켓 예매 사이트
                         </p>
 
                         <h3 className="py-[16px] text-[16px] font-bold">사용 스택</h3>
                         <div className="flex flex-row text-[32px] gap-[8px] py-[8px] px-[32px]">
                             <DiJavascript />
                             <DiNodejs />
+                            <SiExpress />
                             <DiMysql />
                             <DiGithubBadge />
                         </div>
@@ -180,13 +181,76 @@ const Projects = () => {
 
             <Modal show={isShowingModal} onCloseButtonClick={toggleModal}>
                 <div>
-                    dex 탈중앙화 거래소
-                    <h4>기능</h4>
+                    <h3 className='font-bold'>dex 탈중앙화 거래소</h3>
+                    <h4 className='font-bold mt-6'>기능</h4>
                     <ul>
-                        <li>스왑</li>
-                        <li>유동성 공급/제거 </li> 
-                        <li>스테이킹 </li>
-                        <li>거버넌스 </li>
+                        <li>
+                            Swap: 플랫폼 내 예치된 코인 및 토큰을 자유롭게 교환
+                        </li>
+                        <li>
+                            Liquidity: 사용자가 원하는 토큰 2개를 페어로 플랫폼에 존재하는 풀에 원하는 양만큼 1:1로 예치하고 증서로 LP토큰을 부여받음, 해당 풀에서 스왑이 일어나면 유동성 공급자는 지분에 비례하여 수수료를 분배받음
+                        </li>
+                        <li>
+                            Staking: 특정 LP토큰을 스테이킹 풀에 예치한 기간과 양에 따라 메인넷 코인(BNC)를 보상으로 부여
+                        </li>
+                        <li>Governance: 커뮤니티의 방향성에 대한 제안과 투표로 의사를 표할 수 있음</li>
+                    </ul>
+
+
+                    <h4 className='font-bold mt-6'>작업 내용</h4>
+                    <ul>
+                        <li>
+                            contract : data, governance 컨트랙트 작성
+                            data 컨트랙트는 프론트와 상호작용하는 컨트랙트 중 하나로, pair 기능과 관련된 데이터를 기록하는 컨트랙트이다.
+                            governance 컨트랙트는 거버넌스 기능과 관련된 의제 제출, 투표 기능을 담당하는 컨트랙트이다.
+                        </li>
+                        <li>
+                            front : react query를 활용하여 컨트랙트에게 응답받은 데이터를 프론트에 
+                        </li>
+                        <li>
+                            deploy : AWS S3 정적 배포
+                        </li>
+                    </ul>
+
+
+                    <h4 className='font-bold mt-6'>구현 페이지</h4>
+                    <ul>
+                        <li>
+                            <img src={process.env.PUBLIC_URL + '/bounswap.png' } className='h-[300px] mx-auto' />
+                            <span>swap 페이지</span>
+                        </li>
+                        <li>
+                            <img src={process.env.PUBLIC_URL + '/bounswap_tokens.png' } className='h-[300px] mx-auto' />
+                            <span>token dashboard 페이지</span>
+                        </li>
+                        <li>
+                            <img src={process.env.PUBLIC_URL + '/bounswap_tokenDetail.png' } className='h-[300px] mx-auto' />
+                            <span>token detail 페이지</span>
+                        </li>
+                        <li>
+                            <img src={process.env.PUBLIC_URL + '/bounswap_pools.png' } className='h-[300px] mx-auto' />
+                            <span>pool dashboard 페이지</span>
+                        </li>
+                        <li>
+                            <img src={process.env.PUBLIC_URL + '/bounswap_poolDetail.png' } className='h-[300px] mx-auto' />
+                            <span>pool detail 페이지</span>
+                        </li>
+                        <li>
+                            <img src={process.env.PUBLIC_URL + '/bounswap_stake.png' } className='h-[300px] mx-auto' />
+                            <span>stake dashboard 페이지</span>
+                        </li>
+                        <li>
+                            <img src={process.env.PUBLIC_URL + '/bounswap_governance.png' } className='h-[300px] mx-auto' />
+                            <span>governance 페이지</span>
+                        </li>
+                        <li>
+                            <img src={process.env.PUBLIC_URL + '/bounswap_sidebar.png' } className='h-[300px] mx-auto' />
+                            <span>sidebar</span>
+                        </li>
+                        <li>
+                            <img src={process.env.PUBLIC_URL + '/bounswap_mobile.gif' } className='h-[300px] mx-auto' />
+                            <span>모바일 구현</span>
+                        </li>
                     </ul>
                     
                 </div>
@@ -194,21 +258,84 @@ const Projects = () => {
             </Modal>
 
             <Modal show={isShowingModal2} onCloseButtonClick={toggleModal2}>
-                <h4>부동산 매물을 거래할 수 있는 매매 사이트</h4>
-                
                 로그인, 회원가입, 매물 목록, 매물 등록, 매물 상세, 매물 투표, 마이페이지 기능
                 
                 판매자가 매물을 등록하면 사업자 회원들이 해당 매물에 대한 진위 여부를 투표하고, 투표 결과에 따라 매물 목록에 등록됨
                 구매자는 매물 목록 페이지의 매물을 상세 페이지에서 확인할 수 있고, 거래 신청을 할 수 있음
                 판매자와 구매자는 마이페이지에서 매물을 거래할 수 있음
 
+                <div>
+                    <h3 className='font-bold'>부동산 매물을 거래할 수 있는 매매 사이트</h3>
+                    <h4 className='font-bold mt-6'>기능</h4>
+                    <ul>
+                        <li>로그인</li>
+                        <li>회원가입 : 사업자 회원, 일반 회원을 선택하여 회원가입 가능</li>
+                        <li>
+                            매물 등록 : 매물의 정보와 사진을 입력하여 등록할 수 있음. 매물 등록에는 multer를 활용하였음
+                        </li>
+                        <li>
+                            매물 목록 : 거래 가능한 매물 목록을 띄워줌. 찜하기, 조건별 검색이 가능함. 구글 맵 api를 활용하였음.
+                        </li>
+                        <li>
+                            매물 상세 : 매물의 상세 정보를 보여줌. 댓글, 대댓글, 찜하기 기능이 있고 거래 신청이 가능함
+                        </li>
+                        <li>투표 : 등록된 매물의 진위 여부를 판별하기 위한 기능. 사업자 회원들만 투표 가능함</li>
+                        <li>마이페이지: 등록, 구매한 매물 목록을 확인할 수 있고, 매물 거래가 가능함</li>
+                    </ul>
+                    
+
+                    <h4 className='font-bold mt-6'>작업 내용</h4>
+                    <ul>
+                        <li>
+                            매물 상세
+                            - front : 특정 매물의 뭐냐 ㅇㅇ
+                            - back : mysql에서 매물의 상세 정보를 
+                        </li>
+                        <li>
+                            매물 투표 : 매일 자정에 
+                        </li>
+                        <li>
+                            deploy : AWS EC2 배포
+                        </li>
+                    </ul>
+
+
+                    <h4 className='font-bold mt-6'>구현 페이지</h4>
+                    <ul>
+                        <li>
+                            <img src={process.env.PUBLIC_URL + '/bounswap.png' } className='h-[300px] mx-auto' />
+                            <span>swap 페이지</span>
+                        </li>
+                        <li>
+                            <img src={process.env.PUBLIC_URL + '/bounswap_tokens.png' } className='h-[300px] mx-auto' />
+                            <span>token dashboard 페이지</span>
+                        </li>
+                        <li>
+                            <img src={process.env.PUBLIC_URL + '/bounswap_tokenDetail.png' } className='h-[300px] mx-auto' />
+                            <span>token detail 페이지</span>
+                        </li>
+                        <li>
+                            <img src={process.env.PUBLIC_URL + '/bounswap_pools.png' } className='h-[300px] mx-auto' />
+                            <span>pool dashboard 페이지</span>
+                        </li>
+                    </ul>
+                    
+                </div>
+
+
+
+
             </Modal>
 
             <Modal show={isShowingModal3} onCloseButtonClick={toggleModal3}>
                 <h4>티켓을 예매할 수 있는 사이트</h4>
+                <img 
+                    src={process.env.PUBLIC_URL + '/internode.png'}
+                />
                 공연 목록 페이지에서 예매 가능한 공연 목록을 확인할 수 있음
                 자유게시판, 리뷰 목록에서 공연에 대한 평가를 확인할 수 있음
-                공얀 예매 페이지에서는 좌석을 선택해서 예매할 수 있음
+                공연 예매 페이지에서는 좌석을 선택해서 예매할 수 있음
+                관리자 페이지에서 유저 관리 가능
                 socket.io를 사용하여 관리자와의 채팅 기능을 구현함 
             </Modal>
         </Wrapper>
