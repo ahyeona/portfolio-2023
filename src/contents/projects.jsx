@@ -208,7 +208,7 @@ const Projects = () => {
                             governance 컨트랙트는 거버넌스 기능과 관련된 의제 제출, 투표 기능을 담당하는 컨트랙트이다.
                         </li>
                         <li>
-                            front : react query를 활용하여 컨트랙트에게 응답받은 데이터를 프론트에
+                            front : react query를 활용하여 컨트랙트에게 응답받은 데이터를 기록
                         </li>
                         <li>
                             deploy : AWS S3 정적 배포
@@ -351,7 +351,7 @@ const Projects = () => {
                         <li>
                             공연 예매 기능 구현 : socket.io 사용
                         </li>
-                        <li>마이 페이지</li>
+                        <li>마이 페이지 : 예매 내역/공연 후기 목록 출력, 작성, 수정, 삭제 기능</li>
                     </ul>
 
 
