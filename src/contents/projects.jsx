@@ -185,7 +185,7 @@ const Projects = () => {
             <Modal show={isShowingModal} onCloseButtonClick={toggleModal}>
                 <div>
                     <h3 className='font-bold'>dex 탈중앙화 거래소</h3>
-                    <h4 className='font-bold mt-6'>기능</h4>
+                    {/* <h4 className='font-bold mt-6'>기능</h4>
                     <ul>
                         <li>
                             Swap: 플랫폼 내 예치된 코인 및 토큰을 자유롭게 교환
@@ -197,7 +197,7 @@ const Projects = () => {
                             Staking: 특정 LP토큰을 스테이킹 풀에 예치한 기간과 양에 따라 메인넷 코인(BNC)를 보상으로 부여
                         </li>
                         <li>Governance: 커뮤니티의 방향성에 대한 제안과 투표로 의사를 표할 수 있음</li>
-                    </ul>
+                    </ul> */}
 
 
                     <h4 className='font-bold mt-6'>작업 내용</h4>
@@ -215,44 +215,54 @@ const Projects = () => {
                         </li>
                     </ul>
 
+                    <h4 className='font-bold mt-6'>컨트랙트 아키텍처</h4>
+                    <ul>
+                       <li><img src={process.env.PUBLIC_URL + '/bounswap_architecture.png'} className='h-[300px] mx-auto' /></li>
+                    </ul>
+
 
                     <h4 className='font-bold mt-6'>구현 페이지</h4>
                     <ul>
                         <li>
-                            <img src={process.env.PUBLIC_URL + '/bounswap.png'} className='h-[300px] mx-auto' />
                             <span>swap 페이지</span>
+                            <img src={process.env.PUBLIC_URL + '/bounswap.png'} className='h-[300px] mx-auto' />
+                            <p>플랫폼 내 예치된 코인 및 토큰을 자유롭게 교환할 수 있는 swap 페이지</p>
                         </li>
                         <li>
-                            <img src={process.env.PUBLIC_URL + '/bounswap_tokens.png'} className='h-[300px] mx-auto' />
                             <span>token dashboard 페이지</span>
+                            <img src={process.env.PUBLIC_URL + '/bounswap_tokens.png'} className='h-[300px] mx-auto' />
                         </li>
                         <li>
-                            <img src={process.env.PUBLIC_URL + '/bounswap_tokenDetail.png'} className='h-[300px] mx-auto' />
                             <span>token detail 페이지</span>
+                            <img src={process.env.PUBLIC_URL + '/bounswap_tokenDetail.png'} className='h-[300px] mx-auto' />
                         </li>
                         <li>
-                            <img src={process.env.PUBLIC_URL + '/bounswap_pools.png'} className='h-[300px] mx-auto' />
                             <span>pool dashboard 페이지</span>
+                            <img src={process.env.PUBLIC_URL + '/bounswap_pools.png'} className='h-[300px] mx-auto' />
                         </li>
                         <li>
-                            <img src={process.env.PUBLIC_URL + '/bounswap_poolDetail.png'} className='h-[300px] mx-auto' />
                             <span>pool detail 페이지</span>
+                            <img src={process.env.PUBLIC_URL + '/bounswap_poolDetail.png'} className='h-[300px] mx-auto' />
+                            <p>add liquidity : 사용자가 원하는 토큰 2개를 페어로 플랫폼에 존재하는 풀에 원하는 양만큼 1:1로 예치하고 증서로 LP토큰을 부여받음, 해당 풀에서 스왑이 일어나면 유동성 공급자는 지분에 비례하여 수수료를 분배받음</p>
                         </li>
                         <li>
-                            <img src={process.env.PUBLIC_URL + '/bounswap_stake.png'} className='h-[300px] mx-auto' />
                             <span>stake dashboard 페이지</span>
+                            <img src={process.env.PUBLIC_URL + '/bounswap_stake.png'} className='h-[300px] mx-auto' />
+                            <p>staking : 특정 LP토큰을 스테이킹 풀에 예치한 기간과 양에 따라 메인넷 코인(BNC)를 보상으로 부여</p>
                         </li>
                         <li>
-                            <img src={process.env.PUBLIC_URL + '/bounswap_governance.png'} className='h-[300px] mx-auto' />
                             <span>governance 페이지</span>
+                            <img src={process.env.PUBLIC_URL + '/bounswap_governance.png'} className='h-[300px] mx-auto' />
+                            <p>governance : 커뮤니티의 방향성에 대한 제안과 투표로 의사를 표할 수 있음</p>
                         </li>
                         <li>
-                            <img src={process.env.PUBLIC_URL + '/bounswap_sidebar.png'} className='h-[300px] mx-auto' />
                             <span>sidebar</span>
+                            <img src={process.env.PUBLIC_URL + '/bounswap_sidebar.png'} className='h-[300px] mx-auto' />
+                            <p>사용자가 보유중인 코인, 토큰 목록과 유동성을 제공한 풀의 목록을 출력</p>
                         </li>
                         <li>
-                            <img src={process.env.PUBLIC_URL + '/bounswap_mobile.gif'} className='h-[300px] mx-auto' />
                             <span>모바일 구현</span>
+                            <img src={process.env.PUBLIC_URL + '/bounswap_mobile.gif'} className='h-[300px] mx-auto' />
                         </li>
                     </ul>
 
@@ -268,7 +278,7 @@ const Projects = () => {
                     판매자가 매물을 등록하면 사업자 회원들이 해당 매물에 대한 진위 여부를 투표하고, 투표 결과에 따라 매물 목록에 등록됨
                     구매자는 매물 목록 페이지의 매물을 상세 페이지에서 확인할 수 있고, 거래 신청을 할 수 있음
                     판매자와 구매자는 마이페이지에서 매물을 거래할 수 있음
-                    <ul>
+                    {/* <ul>
                         <li>로그인</li>
                         <li>회원가입 : 사업자 회원, 일반 회원을 선택하여 회원가입 가능</li>
                         <li>
@@ -282,7 +292,14 @@ const Projects = () => {
                         </li>
                         <li>투표 : 등록된 매물의 진위 여부를 판별하기 위한 기능. 사업자 회원들만 투표 가능함</li>
                         <li>마이페이지: 등록, 구매한 매물 목록을 확인할 수 있고, 매물 거래가 가능함</li>
+                    </ul> */}
+
+
+                    <h4 className='font-bold mt-6'>ERD</h4>
+                    <ul>
+                       <li><img src={process.env.PUBLIC_URL + '/nobroker_erd.png'} className='h-[300px] mx-auto' /></li>
                     </ul>
+
 
 
                     <h4 className='font-bold mt-6'>작업 내용</h4>
@@ -309,20 +326,28 @@ const Projects = () => {
                     <h4 className='font-bold mt-6'>구현 페이지</h4>
                     <ul>
                         <li>
-                            <img src={process.env.PUBLIC_URL + '/nobroker_main.png'} className='h-[300px] mx-auto' />
                             <span>메인 페이지</span>
+                            <img src={process.env.PUBLIC_URL + '/nobroker_main.png'} className='h-[300px] mx-auto' />
                         </li>
                         <li>
-                            <img src={process.env.PUBLIC_URL + '/nobroker_list.png'} className='h-[300px] mx-auto' />
                             <span>매물 목록 페이지</span>
+                            <img src={process.env.PUBLIC_URL + '/nobroker_list.png'} className='h-[300px] mx-auto' />
+                            <p>매물 목록 : 거래 가능한 매물 목록을 띄워줌. 찜하기, 조건별 검색이 가능함. 구글 맵 api를 활용하였음.</p>
                         </li>
                         <li>
-                            <img src={process.env.PUBLIC_URL + '/nobroker_detail.png'} className='h-[300px] mx-auto' />
                             <span>매물 상세 페이지</span>
+                            <img src={process.env.PUBLIC_URL + '/nobroker_detail.png'} className='h-[300px] mx-auto' />
+                            <p>매물 상세 : 매물의 상세 정보를 보여줌. 댓글, 대댓글, 찜하기 기능이 있고 거래 신청이 가능함</p>
                         </li>
                         <li>
-                            <img src={process.env.PUBLIC_URL + '/nobroker_voteList.png'} className='h-[300px] mx-auto' />
                             <span>매물 투표 목록 페이지</span>
+                            <img src={process.env.PUBLIC_URL + '/nobroker_voteList.png'} className='h-[300px] mx-auto' />
+                            <p>투표 : 등록된 매물의 진위 여부를 판별하기 위한 기능. 사업자 회원들만 투표 가능함</p>
+                        </li>
+                        <li>
+                            <span>마이페이지</span>
+                            <img src={process.env.PUBLIC_URL + '/nobroker_mypage.png'} className='h-[300px] mx-auto' />
+                            <p>마이페이지: 등록, 구매한 매물 목록을 확인할 수 있고, 매물 거래가 가능함</p>
                         </li>
                     </ul>
 
@@ -346,6 +371,11 @@ const Projects = () => {
                         <li>마이페이지 : 개인 정보 수정 및 예매 내역 확인 가능</li>
                     </ul>
 
+                    <h4 className='font-bold mt-6'>ERD</h4>
+                    <ul>
+                       <li><img src={process.env.PUBLIC_URL + '/internode_erd.png'} className='h-[300px] mx-auto' /></li>
+                    </ul>
+
                     <h4 className='font-bold mt-6'>작업 내용</h4>
                     <ul>
                         <li>
@@ -358,46 +388,41 @@ const Projects = () => {
                     <h4 className='font-bold mt-6'>구현 페이지</h4>
                     <ul>
                         <li>
+                            <span>메인 페이지</span>
                             <img src={process.env.PUBLIC_URL + '/internode.png'} className='h-[300px] mx-auto' />
                             <img src={process.env.PUBLIC_URL + '/internode_list2.png'} className='h-[300px] mx-auto' />
-                            <span>메인 페이지</span>
                         </li>
                         <li>
+                            <span>상세 페이지</span>
                             <img src={process.env.PUBLIC_URL + '/internode_detail1.png'} className='h-[300px] mx-auto' />
                             <img src={process.env.PUBLIC_URL + '/internode_detail2.png'} className='h-[300px] mx-auto' />
                             <img src={process.env.PUBLIC_URL + '/internode_detail3.png'} className='h-[300px] mx-auto' />
-                            <span>상세 페이지</span>
                         </li>
                         <li>
-                            <img src={process.env.PUBLIC_URL + '/internode_ticketing.png'} className='h-[300px] mx-auto' />
                             <span>예매 페이지</span>
+                            <img src={process.env.PUBLIC_URL + '/internode_ticketing.png'} className='h-[300px] mx-auto' />
                         </li>
                         <li>
-                            <img src={process.env.PUBLIC_URL + '/internode.png'} className='h-[300px] mx-auto' />
-                            <img src={process.env.PUBLIC_URL + '/internode_list2.png'} className='h-[300px] mx-auto' />
-                            <span>메인 페이지</span>
-                        </li>
-                        <li>
+                            <span>마이페이지</span>
                             <img src={process.env.PUBLIC_URL + '/internode_mypage.png'} className='h-[300px] mx-auto' />
                             <img src={process.env.PUBLIC_URL + '/internode_addReview.png'} className='h-[300px] mx-auto' />
-                            <span>마이페이지</span>
                         </li>
                         <li>
+                            <span>자유게시판</span>
                             <img src={process.env.PUBLIC_URL + '/internode_freeboard.png'} className='h-[300px] mx-auto' />
                             <img src={process.env.PUBLIC_URL + '/internode_insertFreeboard.png'} className='h-[300px] mx-auto' />
-                            <span>자유게시판</span>
                         </li>
                         <li>
-                            <img src={process.env.PUBLIC_URL + '/internode_chat.png'} className='h-[300px] mx-auto' />
                             <span>문의하기</span>
+                            <img src={process.env.PUBLIC_URL + '/internode_chat.png'} className='h-[300px] mx-auto' />
+                            <span>관리자</span>
                             <img src={process.env.PUBLIC_URL + '/internode_admin_user.png'} className='h-[300px] mx-auto' />
                             <img src={process.env.PUBLIC_URL + '/internode_admin_chat.png'} className='h-[300px] mx-auto' />
                             <img src={process.env.PUBLIC_URL + '/internode_admin_chat_detail.png'} className='h-[300px] mx-auto' />
-                            <span>관리자</span>
                         </li>
                         <li>
-                            <img src={process.env.PUBLIC_URL + '/internode_signup.png'} className='h-[300px] mx-auto' />
                             <span>회원가입 페이지</span>
+                            <img src={process.env.PUBLIC_URL + '/internode_signup.png'} className='h-[300px] mx-auto' />
                         </li>
                     </ul>
                     
