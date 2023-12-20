@@ -53,7 +53,7 @@ const Profile = () => {
                     김아현 <span className="text-[16px] text-slate-400 font-normal">ahyeon</span>
                 </Hero>
                 <p className="text-slate-700 pt-[5px] md:text-[24px] md:pt-[10px] text-[16px]">
-                    블록체인 개발자
+                    백엔드 개발자
                 </p>
                 <p className="flex flex-col text-[16px] items-left pt-[7px] md:pt-[5px] md:text-[14px]">
                     <a href="mailto:web7722@gmail.com" className="flex items-center gap-[5px] text-slate-600">
@@ -68,10 +68,10 @@ const Profile = () => {
                         <IoLogoGithub />
                         ahyeona
                     </a>
-                    <a href="https://velog.io/@ahyeona" className="flex items-center gap-[5px] text-slate-600" target='blank'>
+                    {/* <a href="https://velog.io/@ahyeona" className="flex items-center gap-[5px] text-slate-600" target='blank'>
                         <SiVelog />
                         blog
-                    </a>
+                    </a> */}
                 </p>
             </div>
         </div>

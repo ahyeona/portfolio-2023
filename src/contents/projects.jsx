@@ -205,7 +205,7 @@ const Projects = () => {
                         <li>
                             contract : data, governance 컨트랙트 작성
                             data 컨트랙트는 프론트와 상호작용하는 컨트랙트 중 하나로, pair 기능과 관련된 데이터를 기록하는 컨트랙트이다.
-                            governance 컨트랙트는 거버넌스 기능과 관련된 의제 제출, 투표 기능을 담당하는 컨트랙트이다.
+                            governance 컨트랙트는 거버넌스 기능을 담당하는 컨트랙트로, 의제 제출과 투표 기능을 담당하는 컨트랙트이다.
                         </li>
                         <li>
                             front : react query를 활용하여 컨트랙트에게 응답받은 데이터를 기록
@@ -361,6 +361,43 @@ const Projects = () => {
                             <img src={process.env.PUBLIC_URL + '/internode.png'} className='h-[300px] mx-auto' />
                             <img src={process.env.PUBLIC_URL + '/internode_list2.png'} className='h-[300px] mx-auto' />
                             <span>메인 페이지</span>
+                        </li>
+                        <li>
+                            <img src={process.env.PUBLIC_URL + '/internode_detail1.png'} className='h-[300px] mx-auto' />
+                            <img src={process.env.PUBLIC_URL + '/internode_detail2.png'} className='h-[300px] mx-auto' />
+                            <img src={process.env.PUBLIC_URL + '/internode_detail3.png'} className='h-[300px] mx-auto' />
+                            <span>상세 페이지</span>
+                        </li>
+                        <li>
+                            <img src={process.env.PUBLIC_URL + '/internode_ticketing.png'} className='h-[300px] mx-auto' />
+                            <span>예매 페이지</span>
+                        </li>
+                        <li>
+                            <img src={process.env.PUBLIC_URL + '/internode.png'} className='h-[300px] mx-auto' />
+                            <img src={process.env.PUBLIC_URL + '/internode_list2.png'} className='h-[300px] mx-auto' />
+                            <span>메인 페이지</span>
+                        </li>
+                        <li>
+                            <img src={process.env.PUBLIC_URL + '/internode_mypage.png'} className='h-[300px] mx-auto' />
+                            <img src={process.env.PUBLIC_URL + '/internode_addReview.png'} className='h-[300px] mx-auto' />
+                            <span>마이페이지</span>
+                        </li>
+                        <li>
+                            <img src={process.env.PUBLIC_URL + '/internode_freeboard.png'} className='h-[300px] mx-auto' />
+                            <img src={process.env.PUBLIC_URL + '/internode_insertFreeboard.png'} className='h-[300px] mx-auto' />
+                            <span>자유게시판</span>
+                        </li>
+                        <li>
+                            <img src={process.env.PUBLIC_URL + '/internode_chat.png'} className='h-[300px] mx-auto' />
+                            <span>문의하기</span>
+                            <img src={process.env.PUBLIC_URL + '/internode_admin_user.png'} className='h-[300px] mx-auto' />
+                            <img src={process.env.PUBLIC_URL + '/internode_admin_chat.png'} className='h-[300px] mx-auto' />
+                            <img src={process.env.PUBLIC_URL + '/internode_admin_chat_detail.png'} className='h-[300px] mx-auto' />
+                            <span>관리자</span>
+                        </li>
+                        <li>
+                            <img src={process.env.PUBLIC_URL + '/internode_signup.png'} className='h-[300px] mx-auto' />
+                            <span>회원가입 페이지</span>
                         </li>
                     </ul>
                     

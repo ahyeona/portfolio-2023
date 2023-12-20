@@ -16,7 +16,6 @@ const Introduce = () => {
                 <RiDoubleQuotesL />
                 <div className="text-center text-[16px] md:text-[24px]">
                     <p>묵묵히 노력하는 개발자</p>
-                    {/* <p>개발자</p> */}
                 </div>
                 <RiDoubleQuotesR />
             </div>
