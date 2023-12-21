@@ -7,9 +7,6 @@ import useModal from '../hooks/useModal'
 import Modal from '../components/modal'
 
 const Projects = () => {
-    // console.log("this==window", this==window);
-    // console.log("this", this);
-
     const [isShowingModal, toggleModal] = useModal()
     const [isShowingModal2, toggleModal2] = useModal()
     const [isShowingModal3, toggleModal3] = useModal()
@@ -67,9 +64,10 @@ const Projects = () => {
 
                         <h3 className="py-[16px] text-[16px] font-bold">주요 업무</h3>
                         <ul className="px-[32px] leading-8 list-disc list-outside text-[12px] md:text-[16px]">
-                            <li>Data, Governance 컨트랙트 작성</li>
-                            {/* <li>컨트랙트 데이터 프론트 출력</li> */}
-                            <li>AWS S3 정적 배포</li>
+                            <li>Data 컨트랙트 작성</li>
+                            <li>Governance 컨트랙트 작성</li>
+                            <li>컨트랙트 데이터 프론트 출력</li>
+                            <li>AWS S3 프론트 배포</li>
                         </ul>
                     </div>
                 </li>
@@ -123,7 +121,8 @@ const Projects = () => {
                         <h3 className="py-[16px] text-[16px] font-bold">주요 업무</h3>
                         <ul className="px-[32px] leading-8 list-disc list-outside text-[12px] md:text-[16px]">
                             <li>팀장(업무 분배 및 일정 관리)</li>
-                            <li>매물 상세 페이지, 매물 투표 페이지</li>
+                            <li>매물 상세 페이지</li>
+                            <li>매물 투표 페이지</li>
                             <li>AWS EC2 배포</li>
                         </ul>
                     </div>
