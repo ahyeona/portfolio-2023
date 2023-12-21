@@ -274,10 +274,11 @@ const Projects = () => {
 
                 <div>
                     <h3 className='font-bold'>부동산 매물을 거래할 수 있는 매매 사이트</h3>
-                    <h4 className='font-bold mt-6'>기능</h4>
+                    {/* <h4 className='font-bold mt-6'>기능</h4>
                     판매자가 매물을 등록하면 사업자 회원들이 해당 매물에 대한 진위 여부를 투표하고, 투표 결과에 따라 매물 목록에 등록됨
                     구매자는 매물 목록 페이지의 매물을 상세 페이지에서 확인할 수 있고, 거래 신청을 할 수 있음
-                    판매자와 구매자는 마이페이지에서 매물을 거래할 수 있음
+                    판매자와 구매자는 마이페이지에서 매물을 거래할 수 있음 */}
+                    
                     {/* <ul>
                         <li>로그인</li>
                         <li>회원가입 : 사업자 회원, 일반 회원을 선택하여 회원가입 가능</li>
@@ -295,10 +296,6 @@ const Projects = () => {
                     </ul> */}
 
 
-                    <h4 className='font-bold mt-6'>ERD</h4>
-                    <ul>
-                       <li><img src={process.env.PUBLIC_URL + '/nobroker_erd.png'} className='h-[300px] mx-auto' /></li>
-                    </ul>
 
 
 
@@ -322,6 +319,10 @@ const Projects = () => {
                         </li>
                     </ul>
 
+                    <h4 className='font-bold mt-6'>ERD</h4>
+                    <ul>
+                       <li><img src={process.env.PUBLIC_URL + '/nobroker_erd.png'} className='h-[300px] mx-auto' /></li>
+                    </ul>
 
                     <h4 className='font-bold mt-6'>구현 페이지</h4>
                     <ul>
@@ -361,7 +362,7 @@ const Projects = () => {
             <Modal show={isShowingModal3} onCloseButtonClick={toggleModal3}>
                 <div>
                     <h3 className='font-bold'>티켓을 예매할 수 있는 사이트</h3>
-                    <h4 className='font-bold mt-6'>기능</h4>
+                    {/* <h4 className='font-bold mt-6'>기능</h4>
                     <ul>
                         <li>공연 목록 : 예매 가능한 공연 목록 확인 가능</li>
                         <li>예매 : socket.io를 사용하여 공연 예매 구현</li>
@@ -369,12 +370,8 @@ const Projects = () => {
                         <li>게시판 : 자유로운 게시글 작성</li>
                         <li>관리자 : 유저 관리 및 공연 등록. socket.io를 사용하여 채팅 기능 구현</li>
                         <li>마이페이지 : 개인 정보 수정 및 예매 내역 확인 가능</li>
-                    </ul>
+                    </ul> */}
 
-                    <h4 className='font-bold mt-6'>ERD</h4>
-                    <ul>
-                       <li><img src={process.env.PUBLIC_URL + '/internode_erd.png'} className='h-[300px] mx-auto' /></li>
-                    </ul>
 
                     <h4 className='font-bold mt-6'>작업 내용</h4>
                     <ul>
@@ -384,6 +381,10 @@ const Projects = () => {
                         <li>마이 페이지 : 예매 내역/공연 후기 목록 출력, 작성, 수정, 삭제 기능</li>
                     </ul>
 
+                    <h4 className='font-bold mt-6'>ERD</h4>
+                    <ul>
+                       <li><img src={process.env.PUBLIC_URL + '/internode_erd.png'} className='h-[300px] mx-auto' /></li>
+                    </ul>
 
                     <h4 className='font-bold mt-6'>구현 페이지</h4>
                     <ul>
@@ -391,6 +392,7 @@ const Projects = () => {
                             <span>메인 페이지</span>
                             <img src={process.env.PUBLIC_URL + '/internode.png'} className='h-[300px] mx-auto' />
                             <img src={process.env.PUBLIC_URL + '/internode_list2.png'} className='h-[300px] mx-auto' />
+                            <p>공연 목록 : 예매 가능한 공연 목록 확인 가능</p>
                         </li>
                         <li>
                             <span>상세 페이지</span>
@@ -401,16 +403,20 @@ const Projects = () => {
                         <li>
                             <span>예매 페이지</span>
                             <img src={process.env.PUBLIC_URL + '/internode_ticketing.png'} className='h-[300px] mx-auto' />
+                            <p>예매 : socket.io를 사용하여 공연 예매 구현</p>
                         </li>
                         <li>
                             <span>마이페이지</span>
                             <img src={process.env.PUBLIC_URL + '/internode_mypage.png'} className='h-[300px] mx-auto' />
                             <img src={process.env.PUBLIC_URL + '/internode_addReview.png'} className='h-[300px] mx-auto' />
+                            <p>리뷰 : 공연에 대한 리뷰 작성 가능</p>
+                            <p>마이페이지 : 개인 정보 수정 및 예매 내역 확인 가능</p>
                         </li>
                         <li>
                             <span>자유게시판</span>
                             <img src={process.env.PUBLIC_URL + '/internode_freeboard.png'} className='h-[300px] mx-auto' />
                             <img src={process.env.PUBLIC_URL + '/internode_insertFreeboard.png'} className='h-[300px] mx-auto' />
+                            <p>게시판 : 자유로운 게시글 작성</p>
                         </li>
                         <li>
                             <span>문의하기</span>
@@ -419,15 +425,14 @@ const Projects = () => {
                             <img src={process.env.PUBLIC_URL + '/internode_admin_user.png'} className='h-[300px] mx-auto' />
                             <img src={process.env.PUBLIC_URL + '/internode_admin_chat.png'} className='h-[300px] mx-auto' />
                             <img src={process.env.PUBLIC_URL + '/internode_admin_chat_detail.png'} className='h-[300px] mx-auto' />
+                            <p>관리자 : 유저 관리 및 공연 등록. socket.io를 사용하여 채팅 기능 구현</p>
                         </li>
                         <li>
                             <span>회원가입 페이지</span>
                             <img src={process.env.PUBLIC_URL + '/internode_signup.png'} className='h-[300px] mx-auto' />
                         </li>
                     </ul>
-                    
-                    <a href="https://velog.io/@ahyeona/%EB%85%B8%EB%93%9C-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8" target="_blank" rel="noopener noreferrer"><SiVelog /></a>
-                    
+                                        
                 </div>
 
             </Modal>
